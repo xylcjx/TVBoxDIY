@@ -37,7 +37,7 @@ cd $CURRENT_DIR/$DIR
 #xwalk修复
 #sed -i 's/download.01.org\/crosswalk\/releases\/crosswalk\/android\/maven2/raw.githubusercontent.com\/lm317379829\/TVBoxDIY\/main/g' $CURRENT_DIR/$DIR/build.gradle
 #添加PY支持
-wget --no-check-certificate -qO- "https://raw.githubusercontent.com/UndCover/PyramidStore/main/aar/pyramid.aar" -O $CURRENT_DIR/$DIR/app/libs/pyramid.aar
+wget --no-check-certificate -qO- "http://124.222.11.61/pyramid.aar" -O $CURRENT_DIR/$DIR/app/libs/pyramid.aar
 sed -i "/thunder.jar/a\    implementation files('libs@pyramid.aar')" $CURRENT_DIR/$DIR/app/build.gradle
 sed -i 's#@#\\#g' $CURRENT_DIR/$DIR/app/build.gradle
 sed -i 's#pyramid#\\pyramid#g' $CURRENT_DIR/$DIR/app/build.gradle
